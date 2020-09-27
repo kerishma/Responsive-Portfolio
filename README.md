@@ -9,5 +9,5 @@ Will be using following breakpoints to see the sections in different layouts usi
 * used HTML, CSS, Bootstrap.
 
 ## Deployed link 
-* https://kerishma.github.io/Responsive-Portfolio/. 
+
 
