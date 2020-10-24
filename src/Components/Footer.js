@@ -34,6 +34,7 @@ class Footer extends Component {
 
             <ul className="copyright">
               <li>&copy; Kerishma Tarin</li>
+
             </ul>
           </div>
           <div id="go-top">

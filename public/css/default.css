@@ -1,66 +1,4 @@
 
- article,aside,details,figcaption,figure,
- footer,header,hgroup,menu,nav,section {
-    display: block;
- }
- 
- audio,
- canvas,
- video {
-    display: inline-block;
- }
- 
- audio:not([controls]) {
-    display: none;
-    height: 0;
- }
- 
- [hidden] { display: none; }
- 
- code, kbd, pre, samp {
-    font-family: monospace, serif;
-    font-size: 1em;
- }
- 
- pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
- }
- 
- blockquote, q { quotes: &#8220 &#8220; }
- 
- blockquote:before, blockquote:after,
- q:before, q:after {
-    content: '';
-    content: none;
- }
- 
- ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none;
- }
- 
- mark {
-    background-color: #A7F4F6;
-    color: #555;
- }
- 
- del { text-decoration: line-through; }
- 
- abbr[title], dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help;
- }
- 
- table {
-    border-collapse: collapse;
-    border-spacing: 0;
- }
- 
- /*  1. Basic  ------------------------------------------------------- */
- 
  *,
  *:before,
  *:after {
@@ -85,87 +23,8 @@
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
      -webkit-text-size-adjust: 100%;
  }
- 
- 
- h1, h2, h3, h4, h5, h6 {
-    color: #313131;
-     font-family: 'opensans-bold', sans-serif;
-    font-weight: normal;
- }
- 
- /* for 'em' and 'strong' tags, font-size and line-height should be same with
- the body tag due to rendering problems in some browsers */
- em { font: 15px/30px 'opensans-italic', sans-serif; }
- strong, b { font: 15px/30px 'opensans-bold', sans-serif; }
- small { font-size: 11px; line-height: inherit; }
- 
- /*	Blockquotes */
- blockquote {
-    margin: 30px 0px;
-    padding-left: 40px;
-    position: relative;
- }
- blockquote:before {
-    content: "\201C";
-    opacity: 0.45;
-    font-size: 80px;
-    line-height: 0px;
-    margin: 0;
-    font-family: arial, sans-serif;
- 
-    position: absolute;
-    top:  30px;
-     left: 0;
- }
- blockquote p {
-    font-family: 'librebaskerville-italic', serif;
-    padding: 0;
-    font-size: 18px;
-    line-height: 36px;
- }
- blockquote cite {
-    display: block;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 18px;
- }
- blockquote cite:before { content: "\2014 \0020"; }
- blockquote cite a,
- blockquote cite a:visited { color: #8B9798; border: none }
- 
- /* drop cap */
- .drop-cap:first-letter {
-     float: left;
-     margin: 0;
-     padding: 14px 6px 0 0;
-     font-size: 84px;
-     font-family: 'opensans-bold', sans-serif;
-    line-height: 60px;
-     text-indent: 0;
-     background: transparent;
-     color: inherit;
- }
- 
- hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
- 
- 
- /*  3. Links  ------------------------------------------------------- */
- 
- a, a:visited {
-    text-decoration: none;
-    outline: 0;
-    color: #11ABB0;
- 
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
-    transition: color .3s ease-in-out;
- }
- a:hover, a:focus { color: #313131; }
- p a, p a:visited { line-height: inherit; }
- 
- 
- /*  4. List  --------------------------------------------------------- */
+
+ /*  List   */
  
  ul, ol { margin-bottom: 24px; margin-top: 12px; }
  ul { list-style: none outside; }
@@ -221,26 +80,7 @@
  dl { margin: 12px 0; }
  dt { margin: 0; color:#11ABB0; }
  dd { margin: 0 0 0 20px; }
- 
- /* Lining Definition Style Markup */
- .lining dt,
- .lining dd {
-     display: inline;
-     margin: 0;
- }
- .lining dt + dt:before,
- .lining dd + dt:before {
-     content: "\A";
-     white-space: pre;
- }
- .lining dd + dd:before {
-     content: ", ";
- }
- .lining dd:before {
-     content: ": ";
-     margin-left: -0.2em;
- }
- 
+
  /* Dictionary Definition Style Markup */
  .dictionary-style dt {
      display: inline;
@@ -258,53 +98,7 @@
      content: counter(definitions, decimal) ". ";
  }
  
- /* Pagination */
- .pagination {
-    margin: 36px auto;
-    text-align: center;
- }
- .pagination ul li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
- }
- .pagination .page-numbers {
-    font: 15px/18px 'opensans-bold', sans-serif;
-    display: inline-block;
-    padding: 6px 10px;
-    margin-right: 3px;
-    margin-bottom: 6px;
-     color: #6E757C;
-     background-color: #E6E8EB;
- 
-     -webkit-transition: all 200ms ease-in-out;
-     -moz-transition: all 200ms ease-in-out;
-     -o-transition: all 200ms ease-in-out;
-     -ms-transition: all 200ms ease-in-out;
-     transition: all 200ms ease-in-out;
- 
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-     border-radius: 3px;
- }
- .pagination .page-numbers:hover {
-    background: #838A91;
-    color: #fff;
- }
- .pagination .current,
- .pagination .current:hover {
-    background-color: #11ABB0;
-    color: #fff;
- }
- .pagination .inactive,
- .pagination .inactive:hover {
-    background-color: #E6E8EB;
-     color: #A9ADB2;
- }
- .pagination .prev, .pagination .next {}
- 
- /*  5. Images  --------------------------------------------------------- */
+ /*  Images  */
  
  img {
     max-width: 100%;
@@ -313,7 +107,7 @@
  img.pull-right { margin: 12px 0px 0px 18px; }
  img.pull-left { margin: 12px 18px 0px 0px; }
  
- /*  6. Buttons  --------------------------------------------------------- */
+ /* Buttons */
  
  .button,
  .button:visited,
@@ -374,7 +168,7 @@
      text-align: center;
  }
  
- /*  7. Forms  --------------------------------------------------------- */
+ /*   Forms */
  
  form { margin-bottom: 24px; }
  fieldset { margin-bottom: 24px; }
@@ -431,8 +225,7 @@
  input[type="checkbox"] { display: inline; }
  
  
- /* default
- --------------------------------------------------------------- */
+ /* default */
  .row {
     width: 96%;
     max-width: 1020px;
@@ -489,8 +282,7 @@
  .row .twelve      { width: 100%; }
  
  
- /* block grids
- --------------------------------------------------------------------- */
+ /* block grids */
  .bgrid-sixths [class*="column"]   { width: 16.66667%; }
  .bgrid-quarters [class*="column"] { width: 25%; }
  .bgrid-thirds [class*="column"]   { width: 33.33333%; }
@@ -553,24 +345,21 @@
     .row .offset-11   { margin-left: 0%; }
  }
  
- /* mobile narrow
- --------------------------------------------------------------- */
+ /* mobile narrow */
  @media only screen and (max-width: 460px) {
  
     .row { width: auto; }
  
  }
  
- /* larger screens
- --------------------------------------------------------------- */
+ /* larger screens */
  @media screen and (min-width: 1200px) {
  
     .wide .row { max-width: 1180px; }
  
  }
  
- /*  1. Clearing
- --------------------------------------------------------------------- */
+ /*  Clearing  */
  
  .cf:before,
  .cf:after {
