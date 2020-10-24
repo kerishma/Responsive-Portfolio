@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MyResume from '../pdf/Kerishma_Resume.pdf';
+import MyResume from '../pdf/Tarin_Kerishma_Resume.pdf';
 
 class About extends Component {
   render() {
@@ -21,7 +21,6 @@ class About extends Component {
           <div className="three columns">
             <img
               className="profile-pic"
-              // image="mypic.jpg"
               src={profilepic}
               alt="My Profile Pic"
             />

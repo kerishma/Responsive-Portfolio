@@ -1,4 +1,33 @@
 
+ article,aside,details,figcaption,figure,
+ footer,header,hgroup,menu,nav,section {
+    display: block;
+ }
+ 
+ audio,
+ canvas,
+ video {
+    display: inline-block;
+ }
+ 
+ audio:not([controls]) {
+    display: none;
+    height: 0;
+ }
+ 
+ [hidden] { display: none; }
+ 
+ code, kbd, pre, samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+ }
+ 
+ pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+ }
+ 
  blockquote, q { quotes: &#8220 &#8220; }
  
  blockquote:before, blockquote:after,
@@ -57,29 +86,11 @@
      -webkit-text-size-adjust: 100%;
  }
  
- /*  2. Typography
-        Vertical rhythm with leading derived from 6
- --------------------------------------------------------------------- */
  
  h1, h2, h3, h4, h5, h6 {
     color: #313131;
      font-family: 'opensans-bold', sans-serif;
     font-weight: normal;
- }
- h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
- h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
- h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
- h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
- h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
- h5 { font-size: 18px; line-height: 30px; }
- h6 { font-size: 14px; line-height: 30px; }
- .subheader { }
- 
- p { margin: 0 0 30px 0; }
- p img { margin: 0; }
- p.lead {
-    font: 19px/36px 'opensans-light', sans-serif;
-    margin-bottom: 18px;
  }
  
  /* for 'em' and 'strong' tags, font-size and line-height should be same with
@@ -363,14 +374,6 @@
      text-align: center;
  }
  
- /* Fix for odd Mozilla border & padding issues */
- button::-moz-focus-inner,
- input::-moz-focus-inner {
-     border: 0;
-     padding: 0;
- }
- 
- 
  /*  7. Forms  --------------------------------------------------------- */
  
  form { margin-bottom: 24px; }
@@ -395,10 +398,6 @@
      background: #D3D9D9;
  
  }
- 
- /* select { padding: 0;
-    width: 220px;
-    } */
  
  input[type="text"]:focus,
  input[type="password"]:focus,
@@ -489,42 +488,6 @@
  .row .eleven      { width: 91.66667%; }
  .row .twelve      { width: 100%; }
  
- /* Offsets */
- .row .offset-1    { margin-left: 8.33333%; }
- .row .offset-2    { margin-left: 16.66667%; }
- .row .offset-3    { margin-left: 25%; }
- .row .offset-4    { margin-left: 33.33333%; }
- .row .offset-5    { margin-left: 41.66667%; }
- .row .offset-6    { margin-left: 50%; }
- .row .offset-7    { margin-left: 58.33333%; }
- .row .offset-8    { margin-left: 66.66667%; }
- .row .offset-9    { margin-left: 75%; }
- .row .offset-10   { margin-left: 83.33333%; }
- .row .offset-11   { margin-left: 91.66667%; }
- 
- /* Push/Pull */
- .row .push-1      { left: 8.33333%; }
- .row .pull-1      { right: 8.33333%; }
- .row .push-2      { left: 16.66667%; 	}
- .row .pull-2      { right: 16.66667%; }
- .row .push-3      { left: 25%; }
- .row .pull-3      { right: 25%;	}
- .row .push-4      { left: 33.33333%; }
- .row .pull-4      { right: 33.33333%; }
- .row .push-5      { left: 41.66667%; }
- .row .pull-5      { right: 41.66667%; }
- .row .push-6      { left: 50%; }
- .row .pull-6      { right: 50%; }
- .row .push-7      { left: 58.33333%; }
- .row .pull-7      { right: 58.33333%; }
- .row .push-8      { left: 66.66667%; 	}
- .row .pull-8      { right: 66.66667%; }
- .row .push-9      { left: 75%; }
- .row .pull-9      { right: 75%; }
- .row .push-10     { left: 83.33333%; }
- .row .pull-10     { right: 83.33333%; }
- .row .push-11     { left: 91.66667%; }
- .row .pull-11     { right: 91.66667%; }
  
  /* block grids
  --------------------------------------------------------------------- */
@@ -604,6 +567,18 @@
  
     .wide .row { max-width: 1180px; }
  
+ }
+ 
+ /*  1. Clearing
+ --------------------------------------------------------------------- */
+ 
+ .cf:before,
+ .cf:after {
+     content: " ";
+     display: table;
+ }
+ .cf:after {
+     clear: both;
  }
  
  
