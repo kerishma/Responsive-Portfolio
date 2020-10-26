@@ -1,5 +1,3 @@
-body { background: #0f0f0f; }
-
 /* Header Styles */
 
 header {
@@ -49,12 +47,6 @@ header .banner-text h3 span,
 header .banner-text h3 a {
    color: #fff;
 }
-header .banner-text hr {
-   width: 60%;
-   margin: 18px auto 24px auto;
-   border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
-}
 
 /* nav-wrap */
 #nav-wrap {
@@ -96,12 +88,6 @@ ul#navbarSupportedContent li a {
 	text-decoration: none;
    text-align: left;
    color: #fff;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
 }
 
 ul#navbarSupportedContent li a:active { background-color: transparent !important; }
@@ -191,9 +177,7 @@ ul#navbarSupportedContent li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
+/*	Skill Bars */
 
 .bars {
 	width: 95%;
@@ -484,20 +468,7 @@ ul#navbarSupportedContent li.current a { color: #F06000; }
     zoom: 1;
     *display: inline;
 }
-.flex-control-paging li a {
-    width: 12px;
-    height: 12px;
-    display: block;
-    background: #ddd;
-    background: rgba(255, 255, 255, .3);
-    cursor: pointer;
-    text-indent: -9999px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
-}
+
 .flex-control-paging li a:hover {
     background: #CCC;
     background: rgba(255, 255, 255, .7);
@@ -527,17 +498,6 @@ ul#navbarSupportedContent li.current a { color: #F06000; }
    letter-spacing: 3px;
    color: #EBEEEE;
    margin-bottom: 6px;
-}
-#contact h1 span { display: none; }
-#contact h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0e0";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #ebeeee;
 }
 
 #contact h4 {
