@@ -1,13 +1,4 @@
-
- *,
- *:before,
- *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
- }
- 
- html {
+html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
  }
@@ -24,7 +15,6 @@
      -webkit-text-size-adjust: 100%;
  }
 
- /* --------------------------------------------------------------------- */
  .stats-tabs {
     padding: 0;
     margin: 24px 0;
@@ -58,11 +48,6 @@
     color: #8B9798;
  }
  
- /* definition list */
- dl { margin: 12px 0; }
- dt { margin: 0; color:#11ABB0; }
- dd { margin: 0 0 0 20px; }
-
  /* Dictionary Definition Style Markup */
  .dictionary-style dt {
      display: inline;
@@ -109,16 +94,6 @@
     cursor: pointer;
     height: auto;
  
-    -webkit-transition: all .2s ease-in-out;
-     -moz-transition: all .2s ease-in-out;
-     -o-transition: all .2s ease-in-out;
-     -ms-transition: all .2s ease-in-out;
-     transition: all .2s ease-in-out;
- 
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    border-radius: 3px;
  }
  
  .button:hover,
@@ -198,13 +173,7 @@
     max-width: 1020px;
     margin: 0 auto;
  }
- /* fixed width for IE8 */
- .ie .row { width: 1000px ; }
- 
- .narrow .row { max-width: 980px; }
- 
- .row .row { width: auto; max-width: none; margin: 0 -20px; }
- 
+
  /* row clearing */
  .row:before,
  .row:after {
@@ -257,12 +226,10 @@
  
  [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: left; }
  
- /* --------------------------------------------------------------------- */
- .first { clear: left; }   /* first column in default screen */
- .s-first { clear: none; } /* first column in smaller screens */
+ .first { clear: left; }   
+ .s-first { clear: none; } 
  
- /* smaller screens
- --------------------------------------------------------------- */
+ /* smaller screens */
  @media only screen and (max-width: 900px) {
  
     /* block grids on small screens */
@@ -277,8 +244,7 @@
  
  }
  
- /* mobile wide/smaller tablets
- --------------------------------------------------------------- */
+ /* mobile wide/smaller tablets*/
  @media only screen and (max-width: 767px) {
  
     .row {
@@ -297,19 +263,6 @@
  
     [class*="column"] + [class*="column"]:last-child { float: none; }
     [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: none; }
- 
-    /* Offsets */
-    .row .offset-1    { margin-left: 0%; }
-    .row .offset-2    { margin-left: 0%; }
-    .row .offset-3    { margin-left: 0%; }
-    .row .offset-4    { margin-left: 0%; }
-    .row .offset-5    { margin-left: 0%; }
-    .row .offset-6    { margin-left: 0%; }
-    .row .offset-7    { margin-left: 0%; }
-    .row .offset-8    { margin-left: 0%; }
-    .row .offset-9    { margin-left: 0%; }
-    .row .offset-10   { margin-left: 0%; }
-    .row .offset-11   { margin-left: 0%; }
  }
  
  /* mobile narrow */
