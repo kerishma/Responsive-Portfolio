@@ -131,6 +131,12 @@
         "category": "Workout Tracker built with Mongo, Mongoose",
         "image": "workouttracker.jpg",
         "url": "https://appworkout.herokuapp.com/"
+      },
+      {
+      "title": "Google-Books-Search",
+        "category": "Google-Books-Search built with Node, Express, MongoDB",
+        "image": "google-book-search.png",
+        "url": "https://search-google-book.herokuapp.com/"
       }
     ]
   }
